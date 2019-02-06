@@ -1,0 +1,48 @@
+<!--### Exercise 1:-->
+<!--Create a simple form with a single ```checkbox``` and the message ```DON'T CLICK THIS CHECKBOX!```.-->
+<!--When the User tries to click checkbox, display a message, ```I TOLD YOU NOT TO CLICK THIS!!!```-->
+<!--### Exercise 2:-->
+<!--Create a simple form with a textarea, a hidden message with the text ```Start typing```,-->
+<!--and a button that says ```Allow Typing```.-->
+<!--When the page initially displays, the textarea should be disabled, and the message hidden.-->
+<!--When the User clicks the button, display the hidden message, and enable the textarea so you can type into it.-->
+<!--Clicking the button a second time should hide the hidden message and disable the textarea.-->
+<!--Each press of the button should toggle the behavior.-->
+<!--### Exercise 3:-->
+<!--Create a button with the text ```Start countdown!```.-->
+<!--When the User clicks the button, display a countdown sequence from 10 to ```LIFTOFF!!```.-->
+<!--Display each number during the countdown, the the word ```LIFTOFF```.-->
+<!--### CHALLENGE:-->
+<!--Animate the included sprite images-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Exercise 1-->
+<form>
+    <label> DON'T CLICK THIS CHECKBOX!
+    <input type="checkbox" id="dont">
+    </label>
+<!--A form that creates a checkbox that sends an alert to the user if clicked-->
+</form>
+<!--Exercise 2-->
+<form>
+    <h4 id="hide" hidden>Start typing</h4>
+    <textarea name="" id="tbox" cols="25" rows="10" disabled></textarea>
+    <button id="b1">Allow typing</button>
+<!--A form that creates a disabled text box with a hidden message that if activated reveals the message-->
+</form>
+
+<button id="b2">
+    COUNTDOWN
+</button>
+<!--Countdown button-->
+
+<script src="eventTCW.js"></script>
+</body>
+</html>
